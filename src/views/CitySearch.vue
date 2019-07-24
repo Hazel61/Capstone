@@ -2,7 +2,7 @@
     <div>
         <h2>Welcome to my Seattle temperature tracker.</h2>
         <p>I have lived in Seattle for most of my life, and I know the city is warming up. For my final project in Seattlle University's Wats 4000 course, I thought it would be interesting to dive into NOAA's and Open Weather Map's API's and look at some historical data on Seattle. I am using Vue and Vue-chartsjs under the hood. Click below to see the current conditions.</p>
-
+            <img src="../assets/raven1.jpeg" alt="A watercolor of a raven">
             <p>
                 <button v-on:click="getCities" type="submit">Current Weather</button>
             </p>
