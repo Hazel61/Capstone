@@ -1,13 +1,15 @@
 <template>
-    <div>
+    <div class="top-color">
+
+            <img src="../assets/storm-clouds.jpeg" alt="An image of a storm cloud">
+
         <h2>Welcome to my Seattle temperature tracker.</h2>
-        <p>I have lived in Seattle for most of my life, and I know the city is warming up. For my final project in Seattlle University's Wats 4000 course, I thought it would be interesting to dive into NOAA's and Open Weather Map's API's and look at some historical data on Seattle. I am using Vue and Vue-chartsjs under the hood. Click below to see the current conditions.</p>
 
-            <p>
-                <button v-on:click="getCities" type="submit">Current Weather</button>
-            </p>
+        <p>
+            <button v-on:click="getCities" type="submit">Current Weather</button>
+        </p>
 
-            <ul class="cities" v-if="results && results.list.length > 0">
+        <ul class="cities" v-if="results && results.list.length > 0">
             <li v-for="(city,index) in results.list" :key="index">
                 <h2>{{ city.name }}, {{ city.sys.country }}</h2>
 
@@ -16,8 +18,11 @@
             </li>
         </ul>
 
+        <p>I have lived in Seattle for most of my life, and I know the city is warming up. For my final project in Seattlle University's Wats 4000 course, I thought it would be interesting to dive into NOAA's and Open Weather Map's API's and look at some historical data on Seattle. I am using Vue and Vue-chartsjs under the hood. Click below to see the current conditions.</p>
+            <img src="../assets/raven1.jpeg" alt="A watercolor of a raven">
+
             <p>
-                <router-link class="rlink-style" v-bind:to="{name:'Seattle'}">Example Historical Data</router-link>
+                <router-link class="link-style" v-bind:to="{name:'Seattle'}">Example Historical Data</router-link>
             </p>
 
         <error-list v-bind:errorList="errors"></error-list>
@@ -66,6 +71,7 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
     h2 {
         color: blue;
     }
@@ -84,7 +90,7 @@
         padding: 0;
     }
 
-    li {background-color: lavender;
+    li {background-color: #328CC1;
         display: inline-block;
         width: 300px;
         min-height: 300px;
