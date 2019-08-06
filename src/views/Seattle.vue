@@ -2,7 +2,9 @@
     <div>
 
         <h2>Seattle high and low temperature by month in 2018</h2>
-
+        <p>
+            <router-link class="link-style" v-bind:to="{name:'Charts'}">View as chart</router-link>
+        </p>
         <ul class="results" v-if="results">
             <li v-for="(result,index) in tmax" :key="index">
                 <p>Month: {{Months[index]}}</p>
@@ -121,7 +123,8 @@
 
     li {
         display: inline-block;
-        background-color: lightblue;
+        background-color: #328cc1;
+        color: white;
         width: 200px;
         min-height: 200px;
         border: solid 1px #e8e8e8;
@@ -132,4 +135,8 @@
     a {
         color: #42b983;
     }
+    .link-style {
+        color: red
+    }
+
 </style>
