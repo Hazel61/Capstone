@@ -9,7 +9,6 @@
         <i class="fa fa-bars"></i>
       </a>
     </div>
-    <h1>Climate Change in Seattle</h1>
     <div id="home"></div>
     <router-view/>
   </div>
@@ -108,6 +107,10 @@ body {
     float: none;
     display: block;
     text-align: left;
+  }
+  .center-me {
+    margin: 0 auto;
+    width: 50%;
   }
 }
 </style>
