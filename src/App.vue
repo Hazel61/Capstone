@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <div class="topnav" id="myTopnav">
-      <a href="#home" class="active">Home</a>
-      <a href="#videos">News</a>
+      <router-link class="link-style" v-bind:to="{name:'CitySearch'}">Seattle Weather</router-link>
+      <router-link class="link-style" v-bind:to="{name:'Videos'}">Videos</router-link>
       <a href="#contact">Contact</a>
       <a href="#about">About</a>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
