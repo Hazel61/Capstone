@@ -11,7 +11,6 @@
                 <p></p>
                 <p>High Temperature: {{tmax[index]}}&deg;F</p>
                 <p>Low Temperature: {{tmin[index]}}&deg;F</p>
-
             </li>
         </ul>
         <div v-if="errors.length > 0">
