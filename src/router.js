@@ -7,6 +7,7 @@ import Seattle from '@/views/Seattle'
 import Charts from '@/views/Charts'
 import Videos from '@/views/Videos'
 import Resources from '@/views/Resources'
+import HistoricalSearch from '@/views/HistoricalSearch'
 
 Vue.use(Router);
 
@@ -46,6 +47,11 @@ export default new Router({
           path: '/Videos',
           name: 'Videos',
           component: Videos
+      },
+      {
+          path: '/HistoricalSearch',
+          name: 'HistoricalSearch',
+          component: HistoricalSearch
       }
 
   ]

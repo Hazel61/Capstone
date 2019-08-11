@@ -9,8 +9,8 @@
             <li v-for="(result,index) in tmax" :key="index">
                 <p>Month: {{Months[index]}}</p>
                 <p></p>
-                <p>High Temperature: {{tmax[index]}}&deg;F</p>
-                <p>Low Temperature: {{tmin[index]}}&deg;F</p>
+                <p>High: {{tmax[index]}}&deg;F</p>
+                <p>Low: {{tmin[index]}}&deg;F</p>
             </li>
         </ul>
         <div v-if="errors.length > 0">
@@ -20,9 +20,6 @@
             </ul>
             <error-list v-bind:errorList="errors"></error-list>
         </div>
-        <p>
-            <router-link class="rlink-style" v-bind:to="{name:'Charts'}">View charts</router-link>
-        </p>
     </div>
 </template>
 
@@ -124,8 +121,8 @@
         display: inline-block;
         background-color: #328cc1;
         color: white;
-        width: 200px;
-        min-height: 200px;
+        width: 160px;
+        min-height: 140px;
         border: solid 1px #e8e8e8;
         padding: 10px;
         margin: 5px;
