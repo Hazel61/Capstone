@@ -2,14 +2,12 @@
     <div class="top-color">
         <img src="../assets/storm-clouds.jpeg" alt="An image of a storm cloud" class="move-right">
         <h1 class='center-me'>Climate Change in Seattle</h1>
-        <!--<img src="../assets/storm-clouds.jpeg" alt="An image of a storm cloud" class="move-right">-->
-
-
-        <p>I have lived in Seattle for most of my life, I know the city is warming up, and the climate here is changing. For my final capstone project in Seattlle University's Web Technology (WATS) certificate, I thought it would be interesting to dive into NOAA's and Open Weather Map's API's and look at some historical data on Seattle's average temperature during the summer and winter, and how that has fluctuated over the last 50 years. I was also curious if Seattle has changed in average rainfall amounts, and if the pattern of rainfall has changed as well.  I am using Vue and Vue-chartsjs under the hood. Click below to see the current conditions.
+        <p>I have lived in Seattle for most of my life, I know the city is warming up, and the climate here is changing. For my final capstone project in Seattle University's Web Technology (WATS) certificate, I thought it would be interesting to dive into NOAA's and Open Weather Map's API's and look at some historical data on Seattle's average temperature during the summer and winter, and how that has fluctuated over the last 50 years. I was also curious if Seattle has changed in average rainfall amounts, and if the pattern of rainfall has changed as well.  I am using Vue and Vue-chartsjs under the hood. Click below to see the current conditions.
         </p>
+       
         <div class="weather-widget">
         <p>
-            <button v-on:click="getSeattleWeather" type="submit">Current Weather</button>
+            <button class="big-button" v-on:click="getSeattleWeather" type="submit">Current Seattle Weather</button>
         </p>
 
         <ul class="cities" v-if="results && results.list.length > 0">
@@ -19,6 +17,12 @@
             </li>
         </ul>
         </div>
+        <p>
+            When you click on the button to the right, current Seattle weather is requested from Open Weather Map's api. A link to this API can be found in the resources tab at the top of the page.
+        </p>
+        <p>
+            The widget below makes an API call to Noaa's historical database, which gives data on from a particular recording station in Seattle. Seattle has over () recording stations.
+        </p>
             <p>
                 <router-link class="link-style" v-bind:to="{name:'Seattle'}">2018 Seattle high/low temps</router-link>
             </p>
@@ -112,10 +116,6 @@
     .link-style {
         color: red
     }
-    .weatherSummary {
-        display: inline-block;
-        width: 100px;
-    }
 
     a {
         color: #42b983;
@@ -128,6 +128,9 @@
     }
     .weather-widget {
         float: right;
+    }
+    .big-button {
+        height: 40px;
     }
 
 </style>
