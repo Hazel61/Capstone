@@ -6,6 +6,7 @@ import CurrentWeather from '@/views/CurrentWeather'
 import Seattle from '@/views/Seattle'
 import Charts from '@/views/Charts'
 import Videos from '@/views/Videos'
+import Resources from '@/views/Resources'
 
 Vue.use(Router);
 
@@ -35,6 +36,11 @@ export default new Router({
           path: '/Charts',
           name: 'Charts',
           component: Charts
+      },
+      {
+          path: '/Resources',
+          name: 'Resources',
+          component: Resources
       },
       {
           path: '/Videos',

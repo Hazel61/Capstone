@@ -1,11 +1,13 @@
 <template>
     <div class="top-color">
-        <h1 class='center-me'>Climate Change in Seattle</h1>
         <img src="../assets/storm-clouds.jpeg" alt="An image of a storm cloud" class="move-right">
+        <h1 class='center-me'>Climate Change in Seattle</h1>
+        <!--<img src="../assets/storm-clouds.jpeg" alt="An image of a storm cloud" class="move-right">-->
 
 
-        <p>I have lived in Seattle for most of my life, and I know the city is warming up. For my final project in Seattlle University's Wats 4000 course, I thought it would be interesting to dive into NOAA's and Open Weather Map's API's and look at some historical data on Seattle. I am using Vue and Vue-chartsjs under the hood. Click below to see the current conditions.
+        <p>I have lived in Seattle for most of my life, I know the city is warming up, and the climate here is changing. For my final capstone project in Seattlle University's Web Technology (WATS) certificate, I thought it would be interesting to dive into NOAA's and Open Weather Map's API's and look at some historical data on Seattle's average temperature during the summer and winter, and how that has fluctuated over the last 50 years. I was also curious if Seattle has changed in average rainfall amounts, and if the pattern of rainfall has changed as well.  I am using Vue and Vue-chartsjs under the hood. Click below to see the current conditions.
         </p>
+        <div class="weather-widget">
         <p>
             <button v-on:click="getSeattleWeather" type="submit">Current Weather</button>
         </p>
@@ -13,12 +15,10 @@
         <ul class="cities" v-if="results && results.list.length > 0">
             <li v-for="(city,index) in results.list" :key="index">
                 <h2>{{ city.name }}, {{ city.sys.country }}</h2>
-
-                <!--<weather-summary v-bind:weatherData="city.weather"></weather-summary>-->
                 <weather-conditions v-bind:conditions="city.main"></weather-conditions>
             </li>
         </ul>
-
+        </div>
             <p>
                 <router-link class="link-style" v-bind:to="{name:'Seattle'}">2018 Seattle high/low temps</router-link>
             </p>
@@ -124,6 +124,9 @@
         text-align: center;
     }
     .move-right {
+        float: right;
+    }
+    .weather-widget {
         float: right;
     }
 
