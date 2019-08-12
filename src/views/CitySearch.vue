@@ -4,7 +4,7 @@
         <h1 class='center-me'>Climate Change in Seattle</h1>
         <p>I have lived in Seattle for most of my life, I know the city is warming up, and the climate here is changing. For my final capstone project in Seattle University's Web Technology (WATS) certificate, I thought it would be interesting to dive into NOAA's and Open Weather Map's API's and look at some historical data on Seattle's average temperature during the summer and winter, and how that has fluctuated over the last 50 years. I was also curious if Seattle has changed in average rainfall amounts, and if the pattern of rainfall has changed as well.  I am using Vue and Vue-chartsjs under the hood. Click below to see the current conditions.
         </p>
-       
+
         <div class="weather-widget">
         <p>
             <button class="big-button" v-on:click="getSeattleWeather" type="submit">Current Seattle Weather</button>
