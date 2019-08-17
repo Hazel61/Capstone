@@ -4,18 +4,11 @@
     export default {
         extends: Bar,
         mixins: [mixins.reactiveProp],
-        props: ['chartdata'],
-        data() {
-            return {
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false
-                }
-            }
-        },
+        props: ['chartData','options'],
+
 
         mounted () {
-            this.renderChart(this.chartdata, this.options)
+            this.renderChart(this.chartData, this.options)
         }
      }
 

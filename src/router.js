@@ -8,6 +8,7 @@ import Charts from '@/views/Charts'
 import Videos from '@/views/Videos'
 import Resources from '@/views/Resources'
 import HistoricalSearch from '@/views/HistoricalSearch'
+import ChartsNew from '@/views/ChartsNew'
 
 Vue.use(Router);
 
@@ -37,6 +38,11 @@ export default new Router({
           path: '/Charts',
           name: 'Charts',
           component: Charts
+      },
+      {
+          path: '/ChartsNew',
+          name: 'ChartsNew',
+          component: ChartsNew
       },
       {
           path: '/Resources',
