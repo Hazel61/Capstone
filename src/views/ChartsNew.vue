@@ -2,7 +2,7 @@
     <div>
         <p>High and low temperatures for 2018</p>
         <p>
-            <line-chart :options="chartOptions" :chart-data="chartData"/>
+            <bar-chart :options="chartOptions" :chart-data="chartData"/>
         </p>
     </div>
 </template>
@@ -10,6 +10,8 @@
 <script>
     import axios from 'axios';
     import LineChart from '@/components/LineChart';
+    import BarChart from '@/components/BarChart';
+
     export default {
         name: 'Seattle',
         data () {
@@ -110,7 +112,8 @@
         },
         components: {
             // 'error-list': ErrorList,
-            'line-chart': LineChart
+            'line-chart': LineChart,
+            'bar-chart': BarChart
         },
 
     }
