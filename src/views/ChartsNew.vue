@@ -13,7 +13,7 @@
     import BarChart from '@/components/BarChart';
 
     export default {
-        name: 'Seattle',
+        name: 'ChartsNew',
         data () {
             let a_dataset = [
                 {
