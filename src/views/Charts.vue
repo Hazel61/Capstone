@@ -11,7 +11,7 @@ template>
     import axios from 'axios';
     import LineChart from '@/components/LineChart';
     export default {
-        name: 'Seattle',
+        name: 'Charts',
         data () {
             let a_dataset = [
                 {
