@@ -9,6 +9,7 @@ import Videos from '@/views/Videos'
 import Resources from '@/views/Resources'
 import HistoricalSearch from '@/views/HistoricalSearch'
 import ChartsNew from '@/views/ChartsNew'
+import HighsOverTime from '@/views/HighsOverTime'
 
 Vue.use(Router);
 
@@ -58,6 +59,11 @@ export default new Router({
           path: '/HistoricalSearch',
           name: 'HistoricalSearch',
           component: HistoricalSearch
+      },
+      {
+          path: '/HighsOverTime',
+          name: 'HighsOverTime',
+          component: HighsOverTime
       }
 
   ]

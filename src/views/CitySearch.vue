@@ -17,16 +17,20 @@
             </li>
         </ul>
         </div>
+
         <p>
             When you click on the button to the right, current Seattle weather is requested from Open Weather Map's api. A link to this API can be found in the resources tab at the top of the page.
         </p>
         <p>
-            The widget below makes an API call to Noaa's historical database, which gives data on from a particular recording station in Seattle. Seattle has over () recording stations.
+            The links below makes an API call to Noaa's historical database, which gives data on from one recording station in Seattle. The first link is for the high and low temperatures in 2018. The second link is for a chart that shows the highs for 2016 to 2018.
         </p>
             <p>
                 <router-link class="link-style" v-bind:to="{name:'Seattle'}">2018 Seattle high/low temps</router-link>
             </p>
 
+        <p>
+            <router-link class="link-style" v-bind:to="{name:'HighsOverTime'}">High Comparison</router-link>
+        </p>
         <error-list v-bind:errorList="errors"></error-list>
     </div>
 </template>
