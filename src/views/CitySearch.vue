@@ -24,6 +24,7 @@
         <p>
             The links below makes an API call to Noaa's historical database, which gives data on from one recording station in Seattle. The first link is for the high and low temperatures in 2018. The second link is for a chart that shows the highs for 2016 to 2018.
         </p>
+        <h2 class='center-me'>The Charts</h2>
             <p>
                 <router-link class="link-style" v-bind:to="{name:'Seattle'}">2018 Seattle high/low temps</router-link>
             </p>
