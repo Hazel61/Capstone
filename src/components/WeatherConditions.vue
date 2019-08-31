@@ -34,6 +34,7 @@ export default {
   dl {
     padding: 5px;
     background: white;
+    border: solid 2px darkblue;
   }
   dt {
     float: left;
