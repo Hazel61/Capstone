@@ -24,14 +24,23 @@
         <p>
             The links below makes an API call to Noaa's historical database, which gives data on from one recording station in Seattle. The first link is for the high and low temperatures in 2018. The second link is for a chart that shows the highs for 2016 to 2018.
         </p>
-        <h2 class='center-me'>The Charts</h2>
-            <p>
-                <router-link class="link-style" v-bind:to="{name:'Seattle'}">2018 Seattle high/low temps</router-link>
-            </p>
-
-        <p>
-            <router-link class="link-style" v-bind:to="{name:'HighsOverTime'}">High Comparison</router-link>
-        </p>
+        <h2>The Charts</h2>
+            <ul class="chart-selection">
+                <li>
+                    <p>To see tiles for each month in 2018</p>
+                    <router-link class="link-style" v-bind:to="{name:'Seattle'}">2018 Seattle high/low temps</router-link>
+                </li>
+                <li>
+                    <router-link class="link-style" v-bind:to="{name:'HighsOverTime'}">High Comparison</router-link>
+                </li>
+            </ul>
+            <!--<p>-->
+                <!--<router-link class="link-style" v-bind:to="{name:'Seattle'}">2018 Seattle high/low temps</router-link>-->
+            <!--</p>-->
+<!---->
+        <!--<p>-->
+            <!--<router-link class="link-style" v-bind:to="{name:'HighsOverTime'}">High Comparison</router-link>-->
+        <!--</p>-->
         <error-list v-bind:errorList="errors"></error-list>
     </div>
 </template>
@@ -119,7 +128,7 @@
         margin: 5px;
     }
     .link-style {
-        color: red
+        color: white;
     }
 
     a {
@@ -136,6 +145,16 @@
     }
     .big-button {
         height: 40px;
+    }
+    .chart-selection li {
+        display: inline-block;
+        background-color: #328cc1;
+        color: white;
+        width: 300px;
+        min-height: 200px;
+        border: solid 1px #e8e8e8;
+        padding: 10px;
+        margin: 5px;
     }
 
 </style>
