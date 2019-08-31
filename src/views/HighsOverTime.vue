@@ -1,6 +1,6 @@
 <template>
     <div>
-        <p>High and low temperatures for 2017 and 2018</p>
+        <p>High and low temperatures for 2016 through 2018</p>
         <p>
             <line-chart :options="chartOptions" :chart-data="chartData"/>
         </p>
