@@ -2,7 +2,7 @@
   <div id="app">
     <div class="topnav" id="myTopnav">
 
-      <router-link class="link-style" v-bind:to="{name:'HistoricalSearch'}">Historical Search</router-link>
+      <router-link class="link-style" v-bind:to="{name:'Seattle'}">2018 Data</router-link>
       <router-link class="link-style" v-bind:to="{name:'Videos'}">Videos</router-link>
       <router-link class="link-style" v-bind:to="{name:'Resources'}">Resources</router-link>
       <router-link class="link-style" v-bind:to="{name:'CitySearch'}">Home</router-link>
