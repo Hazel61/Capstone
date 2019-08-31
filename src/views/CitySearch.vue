@@ -1,7 +1,5 @@
 <template>
     <div class="top-color">
-        <!--<img src="../assets/Storm_over_seattle.jpg" alt="An image of a storm cloud">-->
-
         <h1 class='center-me'>Climate Change in Seattle</h1>
         <div class="flex-container">
             <div flex-item>
@@ -44,7 +42,6 @@
     import ErrorList from '@/components/ErrorList';
     import WeatherSummary from '@/components/WeatherSummary';
     import WeatherConditions from '@/components/WeatherConditions';
-
 
     export default {
         name: 'CitySearch',
